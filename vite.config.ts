@@ -7,6 +7,7 @@ import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import viteCompression from "vite-plugin-compression";
 
 export default defineConfig({
   resolve: {
@@ -18,6 +19,7 @@ export default defineConfig({
     Vue({
       reactivityTransform: true,
     }),
+    viteCompression(),
 
     // https://github.com/hannoeru/vite-plugin-pages
     Pages(),

@@ -1,15 +1,17 @@
 import { describe, expect, it } from 'vitest'
-import cnchar from 'cnchar';
-import 'cnchar-poly';
-import pinyin from "pinyin";
+import pinyin from 'pinyin'
 
-
-describe('Hi', () => {
-  it('should works', () => {
-    console.log(cnchar.spell('这是下雨了吗', "array", "tone"));
-    console.log(pinyin("这是下雨了吗", {
-      heteronym: true,
-    }));
-    expect(cnchar.spell('汉字', "array")).toEqual(['Han', 'Zi'])
-  })
+describe('test 汉字', () => {
+    it('pinyin', () => {
+        console.log(
+            pinyin('这是下雨了吗', {
+                heteronym: true,
+            })
+        )
+        expect(
+            pinyin('汉字', {
+                heteronym: true,
+            })
+        ).toEqual([['hàn'], ['zì']])
+    })
 })
