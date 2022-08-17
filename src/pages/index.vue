@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import pinyin from 'pinyin'
 import { useClipboard } from '@vueuse/core'
+import { GetChinese } from '~/utils'
 const hanzi = ref('')
 const piniynText = ref<string[][]>([])
 const hanziArr = ref<string[]>([])
@@ -35,6 +36,8 @@ const handleCopy = async (type: number) => {
 }
 
 const go = () => {
+    // 删除其他字符
+    hanzi.value = GetChinese(hanzi.value)
     piniynText.value = pinyin(hanzi.value, {
         heteronym: true,
     })

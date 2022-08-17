@@ -18,7 +18,6 @@
         "vue-router": "^4.1.2"
     },
     "devDependencies": {
-        "prettier": "^2.7.1",
         "@antfu/eslint-config": "^0.25.2",
         "@iconify-json/carbon": "^1.1.7",
         "@types/node": "^18.6.1",
@@ -28,6 +27,7 @@
         "eslint": "^8.20.0",
         "jsdom": "^20.0.0",
         "pnpm": "^7.6.0",
+        "prettier": "^2.7.1",
         "taze": "^0.7.6",
         "typescript": "^4.7.4",
         "unocss": "^0.44.7",

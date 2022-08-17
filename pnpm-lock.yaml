@@ -11,6 +11,7 @@ specifiers:
   eslint: ^8.20.0
   jsdom: ^20.0.0
   pinyin: 3.0.0-alpha.5
+  pinyin-pro: ^3.11.0
   pnpm: ^7.6.0
   prettier: ^2.7.1
   taze: ^0.7.6
@@ -29,7 +30,7 @@ specifiers:
 dependencies:
   '@vueuse/core': 9.0.0_vue@3.2.37
   pinyin: 3.0.0-alpha.5
-  prettier: 2.7.1
+  pinyin-pro: 3.11.0
   vite-plugin-compression: 0.5.1_vite@3.0.3
   vue: 3.2.37
   vue-router: 4.1.2_vue@3.2.37
@@ -44,6 +45,7 @@ devDependencies:
   eslint: 8.20.0
   jsdom: 20.0.0
   pnpm: 7.6.0
+  prettier: 2.7.1
   taze: 0.7.6
   typescript: 4.7.4
   unocss: 0.44.7_vite@3.0.3
@@ -3946,6 +3948,10 @@ packages:
     engines: {node: '>=8.6'}
     dev: true
 
+  /pinyin-pro/3.11.0:
+    resolution: {integrity: sha512-l2JDFyEIMdTIyff3OkuoSIJCpYTwrxrR2KuMyGMjdNEcHGcEVSKIEb7mvKEKOhJaZLp2FB++Jax+MD0BWafbhg==}
+    dev: false
+
   /pinyin/3.0.0-alpha.5:
     resolution: {integrity: sha512-Sc8+Ch8uxZsVO0zvzHxvy24fEIixSl7V4kZoX4ThSyQ1BI0H8jIAqf0kxT8WMCX2xEHr1CYslKGDgSE4yj71hg==}
     hasBin: true
@@ -4009,7 +4015,7 @@ packages:
     resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
-    dev: false
+    dev: true
 
   /preval.macro/4.0.0:
     resolution: {integrity: sha512-sJJnE71X+MPr64CVD2AurmUj4JEDqbudYbStav3L9Xjcqm4AR0ymMm6sugw1mUmfI/7gw4JWA4JXo/k6w34crw==}
